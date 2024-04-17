@@ -1,0 +1,197 @@
+/* Imports the Quicksand font from Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #E10E49;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Sets the site containers style */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 1s ease;
+    height: auto;
+    flex: 1;
+
+}
+
+.container:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Sets the site title's style */
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #E10E49;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 30px;
+    user-select: none;
+    top: 100%;
+    left: 100%;
+
+}
+
+
+/* Sets the search and select container style */
+.selectionContainer,
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Sets the label of the categories style */
+label {
+    font-size: 16px;
+    margin-right: 10px;
+    user-select: none;
+    color: #E10E49;
+    font-weight: bold;
+}
+
+/* Sets the search bar and category select bar style*/
+select,
+input[type="text"] {
+    padding: 8px;
+    flex: 1;
+    margin: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Sets the button style */
+button {
+    background-color: #E10E49;
+    color: #FFF;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: all 1s ease;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* All the .news-elements below set the style of the fetched news */
+.newsItem {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 35px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.newsItem:last-child {
+    border-bottom: none;
+
+
+}
+
+.newsImage {
+    flex: 1;
+    max-width: 300px;
+}
+
+.newsImage img {
+    margin-top: 25px;
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.newsContent {
+    flex: 2;
+    margin-left: 20px;
+    user-select: none;
+
+}
+
+.newsContent info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #E10E49;
+    margin-bottom: 12px;
+
+}
+
+.newsContent .info h5 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.newsContent h2 {
+    font-size: 18px;
+    color: #E10E49;
+    margin-top: 0;
+    max-height: 44px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.newsContent p {
+    color: #1E1E1E;
+    margin: 10px 0 20px;
+    font-size: 14px;
+    max-height: 33px;
+    overflow: hidden;
+}
+
+.newsContent a {
+    background-color: #E10E49;
+    color: #FFF;
+    padding: 8px 14px;
+    font-size: 13px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+/* Sets the style of the footer, .footer a:hover sets the color of the hover for the link in the footer */
+.footer {
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px;
+    background-color: #fff;
+    color: #E10E49;
+    font-weight: bold;
+    transition: all 1s ease;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    user-select: none;
+    border-top: 5px solid #E10E49;
+}
+
+.footer a:hover {
+    color: #E10E49;
+}
+
+a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+/* Sets the color for button hovers */
+button:hover,
+.newsContent a:hover {
+    background-color: #db6687;
+}
